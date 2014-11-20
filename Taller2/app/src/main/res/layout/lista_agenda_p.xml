@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lista"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#fff3f5f1"
+    android:padding="2dp"
+    android:theme="@style/AppTheme"
+    tools:ignore="Overdraw">
+
+    <CheckBox
+        android:id="@+id/chkLeido"
+        style="@style/AppTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:checked="false"
+        android:focusable="false"
+        android:textColor="#ffe8ff89"
+        android:theme="@style/AppTheme" />
+
+    <TextView
+        android:id="@+id/lblTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/chkLeido"
+        android:layout_toRightOf="@+id/chkLeido"
+        android:text="@string/lblTitulo"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/lblFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lblTitulo"
+        android:paddingTop="10dp"
+        android:text="@string/lblFecha"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ImageView
+        android:id="@+id/imgCalendar"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignTop="@+id/lblFecha"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/lblFecha"
+        android:contentDescription="imgFecha"
+        android:src="@drawable/calendar" />
+
+    <DigitalClock
+        android:id="@+id/dcHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>

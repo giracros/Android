@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.danielfuentes.taller2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.danielfuentes.taller2.Login"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.danielfuentes.taller2.listview_contactos.lista_contactos"
+            android:label="@string/title_activity_lista_contactos"></activity>
+        <activity
+            android:name="com.danielfuentes.taller2.listview_agenda.lista_agenda"
+            android:label="@string/title_activity_lista_agenda"></activity>
+        <activity
+            android:name=".listview_contactos.lista_contactos_p"
+            android:label="@string/title_activity_lista_contactos_p"></activity>
+    </application>
+
+</manifest>
